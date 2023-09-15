@@ -7,7 +7,8 @@
 
 .header h1 {
     font-size: 50px;
-    color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -15,23 +16,123 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: burlywood;
+    background-color: gray;
     height: 125px;
 }
 
-nav ul {
-    display: flex;
+.nav li {
+    display: inline-block;
+    /* justify-content: flex-end;
     flex-direction: row;
-    list-style-type: none;
+    list-style-type: none; */
+    margin-right: 20px;
+    color: black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul li {
+/* nav ul li {
     margin-right: 10px;
     margin: 
 }
 
 nav ul li a {
-    color:black;
+    color: white;
     font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+.about-me h2,
+.work h3,
+.contact-me h4 {
+    font-size: 36px;
+    /* font-style: ; */
 }
 
+
+.main {
+    display: flex;
+    height: 80vh;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* height: 150px; */
+    width: 900px ;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.card1 {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: flex-end; */
+    /* height: 500px; */
+    width: 1000px ;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.biggerblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 40%;
+    margin: 2px;
+}
+
+.bigcard {
+    /* border: 1px solid black; */
+    margin: 10px;
+    background-color: black;
+    height: 85%;
+    width: 90%;
+    border-radius: 15px;
+    background-image: url(/assets/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.smallblocks {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+.smallcard {   
+height: 45%;
+    width: 45%;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.card h2, h3, h4 {
+    font-size: 36px;
+    color: deeppink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card ul li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    color: blueviolet;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
