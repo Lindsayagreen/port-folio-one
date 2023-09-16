@@ -142,9 +142,6 @@
     border-radius: 15px;
 }
 
-
-    
-
 #project2 {
     background-image: url(/assets/images/pizza.jpg);
     background-repeat: no-repeat;
@@ -186,6 +183,14 @@
     font-weight: bold;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 1440px) {
     .header 
         {display: flex;
@@ -196,13 +201,11 @@
         flex-direction: row;}
     .main
         {display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-left: 5%;}
     .card 
         {display: flex;
             /* flex: 2 1 900px; */
-        height: 35%;
         width: 95%;}
     .card1 {
         height: 60%;
