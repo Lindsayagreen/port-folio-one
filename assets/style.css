@@ -2,12 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: whitesmoke;
 }
-
 
 .header h1 {
     font-size: 50px;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,39 +16,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: whitesmoke;
     height: 125px;
 }
 
 .nav li {
     display: inline-block;
-    /* justify-content: flex-end;
-    flex-direction: row;
-    list-style-type: none; */
     margin-right: 20px;
     color: black;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* nav ul li {
-    margin-right: 10px;
-    margin: 
-}
-
-nav ul li a {
-    color: white;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-} */
-
 .about-me h2,
 .work h3,
 .contact-me h4 {
     font-size: 36px;
-    /* font-style: ; */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .main {
     display: flex;
@@ -58,12 +44,47 @@ nav ul li a {
 .card {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: white;
+    align-items: flex-start;
+    background-color: whitesmoke;
     /* height: 150px; */
     width: 900px ;
-    border: 1px solid black;
+    border: 1px solid rgb(14, 157, 240);
     margin: 5px;
+}
+
+.card h2, h3, h4 {
+    font-size: 36px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profilepic {
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    background-image: url(/assets/images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-metext {
+    border: 1px solid black;
+    width: 500px;
+    height: 95%;
+    margin: 25px;
+}
+
+.card ul li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: circle;
+    margin: 25px;
 }
 
 .card1 {
@@ -73,7 +94,7 @@ nav ul li a {
     align-items: flex-end; */
     /* height: 500px; */
     width: 1000px ;
-    border: 1px solid black;
+    border: 1px solid rgb(14, 157, 240);
     margin: 5px;
 }
 
@@ -87,16 +108,16 @@ nav ul li a {
 }
 
 .bigcard {
-    /* border: 1px solid black; */
     margin: 10px;
-    background-color: black;
+    /* background-color: black; */
     height: 85%;
     width: 90%;
     border-radius: 15px;
-    background-image: url(/assets/stars.jpg);
+    background-image: url(/assets/images/coding.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border: 1px solid rgb(14, 157, 240);
 }
 .smallblocks {
     display:flex;
@@ -107,32 +128,89 @@ nav ul li a {
     /* border: 2px solid black; */
     margin: 5px;
 }
+
+/* .smallblocks:hover {
+    background-color: blue;
+    color: black;
+} */
+
 .smallcard {   
-height: 45%;
+    height: 45%;
     width: 45%;
-    border: 1px solid black;
+    border: 1px solid rgb(14, 157, 240);
     margin: 5px;
     border-radius: 15px;
 }
 
-.card h2, h3, h4 {
-    font-size: 36px;
-    color: deeppink;
-    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+#project2 {
+    background-image: url(/assets/images/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.card ul li {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    color: blueviolet;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+#project3 {
+    background-image: url(/assets/images/logistics-management.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+#project4 {
+    background-image: url(/assets/images/managment2.jpg);
+    background-repeat: no-repeat;
+    background-size: content;
+    background-position: center center;
+}
+
+#project5 {
+    background-image: url(/assets/images/managment.jpg);
+    background-repeat: no-repeat;
+    background-size: content;
+    background-position: center center;
+}
+
 
 .card2 {
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
+    border: 1px solid rgb(14, 157, 240);
 }
+
+.card2 ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1440px) {
+    .header 
+        {display: flex;
+        flex-direction: row;}
+    .header .nav
+        {display: flex;
+        /* flex: 1 1 200px; */
+        flex-direction: row;}
+    .main
+        {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 5%;}
+    .card 
+        {display: flex;
+            /* flex: 2 1 900px; */
+        height: 35%;
+        width: 95%;}
+    .card1 {
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        width: 95%;}
+    .smallblocks {
+        display: flex;
+        flex-direction: row;
+        width: 100%;}
+    }
