@@ -2,39 +2,48 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: whitesmoke;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: deepskyblue;
-}
-
 .header h1 {
     font-size: 50px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(images/header\ background.jpg);
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-    height: 125px;
     background-image: url(images/header\ background.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 25px; 
 }
 
 .nav li {
-    display: inline-block;
-    margin-right: 20px;
+    display: inline;
+} 
+ 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    padding: 10px 20px;
     color: black;
+    text-decoration: none;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover{
+    background-color: lightskyblue;
+    text-decoration: underline;
 }
 
 .about-me h2,
@@ -42,13 +51,12 @@ body {
     font-size: 36px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: deepskyblue;
+    
 }
 
 .main {
     display: flex;
     height: 80vh;
-    background-color: deepskyblue;
 }
 
 .card {
@@ -57,37 +65,29 @@ body {
     align-items: flex-start;
     /* height: 150px; */
     width: 900px ;
-    border: 1px solid rgb(14, 157, 240);
+    /* border: 1px solid rgb(14, 157, 240); */
     margin: 5px;
-    background-color: deepskyblue;
-}
-
-.card h2, h3, h4 {
-    font-size: 36px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: deepskyblue;
+    
 }
 
 .profilepic {
-    background-color: black;
+    background-image: url(images/profile.jpg);
     height: 400px;
     width: 400px;
-    background-image: url(images/profile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; 
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
 }
 
 .about-metext {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 500px;
     height: 95%;
     margin: 25px;
-    background-color: deepskyblue;
-}
-.about-metext ul {
-    background-color: deepskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;   
 }
 
 .card ul li {
@@ -98,8 +98,7 @@ body {
     color: black;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 25px;
-    background-color: deepskyblue;
+    margin: 25px; 
 }
 
 .card1 {
@@ -109,9 +108,8 @@ body {
     align-items: flex-end; */
     /* height: 500px; */
     width: 1000px ;
-    border: 1px solid rgb(14, 157, 240);
-    margin: 5px;
-    background-color: deepskyblue;
+    /* border: 1px solid rgb(14, 157, 240); */
+    margin: 5px;   
 }
 
 .biggerblock {
@@ -121,7 +119,6 @@ body {
     /* border: 1px solid black; */
     height: 40%;
     margin: 2px;
-    background-color: deepskyblue;
 }
 
 .bigcard {
@@ -133,111 +130,102 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border: 1px solid rgb(14, 157, 240);
+    /* border: 1px solid rgb(14, 157, 240); */
 }
 
 .smallblocks {
     display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    /* border: 2px solid black; */
-    margin: 5px;
-    background-color: deepskyblue;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px;
+
 }
 
-/* .smallblocks:hover {
-    background-color: blue;
-    color: black;
-} */
-
-.smallcard {   
-    height: 175px;
-    width: 440px;
-    border: 1px solid rgb(14, 157, 240);
+.smallcard {
     margin: 5px;
-    border-radius: 15px;
+    padding: 1px;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 15px;   
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+    background-position: center;
+
 }
 
 #project2 {
     background-image: url(images/pizza.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
-
 #project3 {
     background-image: url(images/logistics-management.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
-
 #project4 {
     background-image: url(images/managment2.jpg);
-    background-repeat: no-repeat;
-    background-size: content;
-    background-position: center center;
 }
-
 #project5 {
     background-image: url(images/managment.jpg);
-    background-repeat: no-repeat;
-    background-size: content;
-    background-position: center center;
-}
-
-.card2 {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid rgb(14, 157, 240);
-    background-color: deepskyblue;
-}
-
-.card2 ul li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: deepskyblue;
 }
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    background-image: url(images/header\ background.jpg);
 }
- h4 {
-    background-color: deepskyblue;
- }
+
+h4 {
+    font-size: 48px;
+    display: flex;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer ul li {
+    display: inline;
+    float: left;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+}
 @media screen and (max-width: 1440px) {
-    .header 
+    .header, .card1, .card2,  
         {display: flex;
+           flex-direction: column;
     }
-    .header .nav
+    /* .header .nav
         {display: flex;
         /* flex: 1 1 200px; */
-}
+/* }
     .main
         {display: flex;
         flex: 1 2 900px;
         width: 100%;
         /* flex-direction: column; */
-        margin-left: 5%;
+        /* margin-left: 5%;
     }
     .card 
         {width: 45%;
-    }
-    .card1 {
+    } */
+    /* .card1 {
         flex-wrap: wrap;
         height: 100%;
         display: flex;
         width: 100%;
         flex: 1 2 900px;
-    }
-    .header-work {
+    } */
+    /* .header-work {
         height: 5%;
     }
     .smallblocks {
@@ -246,15 +234,13 @@ footer {
         height: 30%;
         width: 100%;}
         /* flex: 1 2 45%;} */
-    
+/*     
     .biggerblock {
         height: 40%;
     }
         
     .smallcard {
         width: 300px;
-    }
+    }  */
         
-
-
     }
