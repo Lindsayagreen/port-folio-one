@@ -6,3 +6,6 @@
 # Screenshot
     ![image](https://github.com/Lindsayagreen/port-folio-one/assets/142925597/2d9f5c53-9f5a-4d18-acf5-fbef92a39006)
 
+# Deployed Link
+    https://lindsayagreen.github.io/port-folio-one/
+    
