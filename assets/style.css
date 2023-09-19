@@ -21,6 +21,8 @@ html {
     color: black;
     margin: 0;
     padding: 25px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .nav li {
@@ -38,8 +40,9 @@ li a {
     padding: 10px 20px;
     color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li a:hover{
@@ -86,6 +89,7 @@ li a:hover{
     margin: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
+    font-weight: bold;
  
 }
 
@@ -169,16 +173,16 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 24px;
+    padding: 12px;
     /* text-align: center; */
     background-image: url(images/header\ background.jpg);
 }
 
 h4 {
     font-size: 48px;
-    display: flex;
     font-weight: bold; 
     font-family: Arial, Helvetica, sans-serif;
+    padding: 14px;
 }
 
 footer ul li {
@@ -188,7 +192,7 @@ footer ul li {
     justify-content: space-between;
     padding: 10px;
     margin: 15px;
-    font-size: 24px;
+    font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 } 
@@ -208,4 +212,5 @@ footer ul li {
         width: 100%;
         flex-direction: column;
         }
+    
 }
